@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "749236121927",
+    "firebase_url": "https://taskapp-c426e.firebaseio.com",
+    "project_id": "taskapp-c426e",
+    "storage_bucket": "taskapp-c426e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749236121927:android:777316131a8ba47c",
+        "android_client_info": {
+          "package_name": "com.example.abdonote"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749236121927-7gcrb8eastm1hpcukfv4e9liunqjk9i4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.abdonote",
+            "certificate_hash": "5c4a327a3bf9db138399de1ade66519d286973f9"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCGmSZG27eZlQrSGs80RpdLWnA3GCScjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "749236121927-tt0abchvo0i8v2k41vn26n2v1tj5rs01.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

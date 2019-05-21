@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by AbdOo Saed from Egypt
+  ~ all Copyright reserved
+  -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/Rate"
+        android:onClick="EditUserName"
+        android:title="@string/edit_name"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_more"
+        android:icon="@drawable/ic_more_vert"
+        android:title="More"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/About_Us"
+                android:icon="@drawable/ic_about"
+                android:title="@string/about_developer"
+                app:showAsAction="ifRoom" />
+            <item
+                android:id="@+id/logOut"
+                android:title="@string/logout"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_logout"/>
+
+
+            <item
+                android:id="@+id/Exit"
+                android:title="@string/exit"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_exitt"
+                />
+
+        </menu>
+
+    </item>
+
+
+</menu>

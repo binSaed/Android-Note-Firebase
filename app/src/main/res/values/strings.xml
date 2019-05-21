@@ -1,0 +1,25 @@
+<!--
+  ~ Created by AbdOo Saed from Egypt
+  ~ all Copyright reserved
+  -->
+
+<resources>
+    <string name="app_name">AbdOo Note</string>
+    <string name="TaskappLogin"> AbdOo Note\n<u>Lo</u>g<u>in</u></string>
+    <string name="TaskappRegistration"> AbdOo Note\n<u>Re</u>g<u>istration</u></string>
+    <string name="emailHint">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="dontHaveAcount">don\'t have an account ? Register now.</string>
+    <string name="haveAcount">already have an account ? login here.</string>
+    <string name="forgetpassowrd">Forget Your Password ? Click here.</string>
+    <string name="about_dev"> My name AbdOo Saed ,i am Android Developer ,
+I studied electronic and electrical engineering,20 years old, from Egypt.</string>
+    <string name="name">Name</string>
+    <string name="exit">Exit</string>
+    <string name="about_developer">About Developer</string>
+    <string name="logout">Logout</string>
+    <string name="edit_name">Edit Name</string>
+    <string name="register">Register</string>
+
+
+</resources>

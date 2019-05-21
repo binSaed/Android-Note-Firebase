@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by AbdOo Saed from Egypt
+  ~ all Copyright reserved
+  -->
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:width="60sp"
+        android:height="50sp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners
+                android:bottomLeftRadius="5sp"
+                android:topLeftRadius="5sp" />
+        </shape>
+    </item>
+
+    <item
+        android:width="50sp"
+        android:height="50sp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="rectangle">
+            <solid android:color="#304FFE" />
+            <corners
+                android:bottomLeftRadius="5sp"
+                android:topLeftRadius="5sp" />
+        </shape>
+    </item>
+    <item
+        android:width="50sp"
+        android:height="50sp"
+        android:drawable="@drawable/ic_email" />
+
+
+</layer-list>

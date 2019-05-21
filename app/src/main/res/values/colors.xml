@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by AbdOo Saed from Egypt
+  ~ all Copyright reserved
+  -->
+
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#1431D5</color>
+    <color name="colorAccent">#D81B60</color>
+</resources>

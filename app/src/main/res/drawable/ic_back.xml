@@ -1,0 +1,52 @@
+<!--
+  ~ Created by AbdOo Saed from Egypt
+  ~ all Copyright reserved
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="360dp"
+    android:height="640dp"
+    android:viewportWidth="360"
+    android:viewportHeight="640">
+    <path
+        android:pathData="M0,0h360v640h-360z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="0"
+                android:endY="640"
+                android:startX="360"
+                android:startY="0"
+                android:type="linear">
+                <item
+                    android:color="#FF5400FF"
+                    android:offset="0" />
+                <item
+                    android:color="#FF6229D5"
+                    android:offset="0.23" />
+                <item
+                    android:color="#304FFE"
+                    android:offset="0.515" />
+                <item
+                    android:color="#304FFE"
+                    android:offset="0.623" />
+                <item
+                    android:color="#FF6A20FF"
+                    android:offset="1" />
+                <item
+                    android:color="#304FFE"
+                    android:offset="1" />
+                <item
+                    android:color="#304FFE"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0.5,0.5h359v639h-359z"
+        android:strokeWidth="1"
+        android:strokeColor="#707070" />
+</vector>
