@@ -56,7 +56,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 intent.putExtras(db);
                 context.startActivity(intent);
 
-                Toast.makeText(context, "" + position, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(context, "" + position, Toast.LENGTH_SHORT).show();
             }
         });
 
