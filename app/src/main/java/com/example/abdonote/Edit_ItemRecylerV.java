@@ -37,6 +37,7 @@ public class Edit_ItemRecylerV extends AppCompatActivity {
         final String time = getIntent().getStringExtra("time");
         final String note = getIntent().getStringExtra("note");
         final String title = getIntent().getStringExtra("title");
+
         edt_title_upd = findViewById(R.id.edt_title_upd);
         btn_delete_upd = findViewById(R.id.btn_delete_upd);
         edt_note_upd = findViewById(R.id.edt_note_upd);

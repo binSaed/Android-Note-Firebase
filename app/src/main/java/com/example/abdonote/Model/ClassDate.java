@@ -5,7 +5,9 @@
  */
 package com.example.abdonote.Model;
 
-public class ClassDate {
+import java.io.Serializable;
+
+public class ClassDate implements Serializable {
     private String id;
     private String time;
     private String title;

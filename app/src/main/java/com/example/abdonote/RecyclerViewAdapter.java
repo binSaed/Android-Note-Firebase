@@ -15,9 +15,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.abdonote.Model.ClassDate;
+import com.facebook.shimmer.ShimmerFrameLayout;
 
 import java.util.ArrayList;
 
@@ -34,10 +34,12 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public View_Holder1 onCreateViewHolder(ViewGroup parent, int viewType) {
         return new View_Holder1(LayoutInflater.from(parent.getContext()).inflate(R.layout.item_data_recyclerv, parent, false));
+
     }
 
     @Override
     public void onBindViewHolder(View_Holder1 holder, final int position) {
+
         final ClassDate sClassDate = values1.get(position);
         holder.mTitle.setText(sClassDate.getTitle());
         holder.mNote.setText(sClassDate.getNote());
@@ -70,6 +72,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     class View_Holder1 extends RecyclerView.ViewHolder {
         private LinearLayout layout_data_racyclerV;
         private TextView mTitle, mNote, mDate;
+
 
         View_Holder1(View itemView) {
             super(itemView);

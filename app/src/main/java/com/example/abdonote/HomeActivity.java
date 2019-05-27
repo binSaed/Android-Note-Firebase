@@ -5,10 +5,8 @@
 
 package com.example.abdonote;
 
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -26,6 +24,7 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.abdonote.Model.ClassDate;
+import com.facebook.shimmer.ShimmerFrameLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
@@ -47,6 +46,7 @@ public class HomeActivity extends AppCompatActivity {
     //    private StorageReference mainRef;
     //    new
     private ArrayList<ClassDate> list2 = new ArrayList<>();
+    private ShimmerFrameLayout container;
 
     private RecyclerViewAdapter viewAdapter;
     private RecyclerView recyclerV;
@@ -65,6 +65,9 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         toolbarHome = findViewById(R.id.toolbarHome);
         recyclerV = findViewById(R.id.recyclerV);
+        container = findViewById(R.id.shimmer_view_container);
+        container.startShimmer();
+
         //hide fab when scrol
         recyclerV.addOnScrollListener(new RecyclerView.OnScrollListener() {
             @Override
@@ -109,17 +112,13 @@ public class HomeActivity extends AppCompatActivity {
         recyclerV.setAdapter(viewAdapter);
 
 
+
         RDatabase.addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 list2.clear();
-                //    Encap encap3 = dataSnapshot.getValue(Encap.class);
-                //   list.add(encap3);
-                viewAdapter.notifyDataSetChanged();
-                list2.clear();
                 for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
-
 
                     ClassDate encap3 = snapshot.getValue(ClassDate.class);
 
@@ -128,6 +127,9 @@ public class HomeActivity extends AppCompatActivity {
                 }
 
                 Collections.reverse(list2);
+                viewAdapter.notifyDataSetChanged();
+                container.stopShimmer();
+                container.setVisibility(View.GONE);
             }
 
             @Override
@@ -209,7 +211,7 @@ public class HomeActivity extends AppCompatActivity {
 //                        SharedPreferences.Editor editor = getSharedPreferences("save", Context.MODE_PRIVATE).edit();
 //                        editor.putString("ed_user_display_name_rg", input.getText().toString());
 //                        editor.apply();
-                        getSupportActionBar().setTitle(input.getText().toString()+ " Note");
+                        getSupportActionBar().setTitle(input.getText().toString() + " Note");
                         Toast.makeText(HomeActivity.this, "Old Is: " + mAuth.getCurrentUser().getDisplayName(), Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -217,5 +219,15 @@ public class HomeActivity extends AppCompatActivity {
 
         alertDialog.show();
     }
+    @Override
+    public void onResume() {
+        super.onResume();
+        container.startShimmer();
+    }
 
+    @Override
+    protected void onPause() {
+        container.stopShimmer();
+        super.onPause();
+    }
 }
